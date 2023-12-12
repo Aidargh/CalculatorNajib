@@ -1,0 +1,120 @@
+<!-- Booklet 2 -->
+<div id="booklet2">
+  <h2>Booklet 2</h2>
+  <div class="step">
+    <h3>Step 1: Identify the project key parameters i.e. platform facilities type & estimated weight</h3>
+    <p>Estimated Facilities Weight : 1600</p>
+    <p>Facility Type : WHP Topsides</p>
+  </div>
+
+    <a class="button button-primary" href="booklet1.html">Go to Booklet 1</a>
+    <a class="button" href="booklet3.html">Go to Booklet 3</a>
+
+    <div class="step">
+    <h3>Step 1: Calculate the Estimated Construction Commodity by Discipline (L2)</h3>
+      
+    <P>To calculate the estimated manhours, data from GPD ANNUAL ONSHORE CONSTRUCTION AND FABRICATION 
+      NORM REPORT_Rev 0 Approved (searcable) from table 6.3.2 & 6.3.3 to be referred as the basis, 
+      which is converted to ratio basis.</P>
+
+      <head>
+        <title>Project Discipline Commodity Calculator</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h2>Project Discipline Commodity Calculator</h2>
+    
+        <form>  
+            <label for="constantC">Constant (k):</label>
+            <input type="text" id="constantC" name="constantC" value="">
+            <br>
+    
+            <label for="disc-mhr-c">Discipline Manhours:</label>
+            <input type="text" id="disc-mhr-c" name="disc-mhr-c" value="">
+            <br>
+    
+            <label for="commodity-value">Commodity Value:</label>
+            <input type="text" id="commodity-value" name="commodity-value" value="" readonly disabled>
+            <br>
+    
+            <label for="commodity-ratio">Commodity Ratio:</label>
+            <input type="text" id="commodity-ratio" name="commodity-ratio" value="" readonly disabled>
+            <br>
+    
+            <label for="baseline-disc-commodity">Baseline Discipline Commodity:</label>
+            <input type="text" id="baseline-disc-commodity" name="baseline-disc-commodity" value="">
+            <br>
+    
+            <label for="baseline-disc-mhrs">Baseline Discipline Manhours:</label>
+            <input type="text" id="baseline-disc-mhrs" name="baseline-disc-mhrs" value="">
+            <br>
+    
+            <label for="new-baseline-disc-commodity">New and Baseline Discipline Commodity:</label>
+            <input type="text" id="new-baseline-disc-commodity" name="new-baseline-disc-commodity" value="" readonly disabled>
+            <br>
+    
+            <label for="project-disc-commodity">Project Discipline Commodity:</label>
+            <input type="text" id="project-disc-commodity" name="project-disc-commodity" value="" readonly disabled>
+            <br>
+    
+            <button type="button" id="calculate-commodity">Calculate Commodity</button>
+            <br>
+    
+        </form>
+    
+        <script src="scriptratio.js"></script>
+--------------------------------------------------------------------------------------------------------
+
+  <h3>Step 4: Calculate the Estimated Construction Commodity by Discipline Activity (L3) </h3>
+
+  <p>To calculate the estimated Construction Coomodity Quantity breakdown by activity (L3), data 
+    from GPD ANNUAL ONSHORE CONSTRUCTION AND FABRICATION NORM REPORT_Rev 0 Approved (searcable) is 
+    gathered</p>
+  
+  <p>if amount of commodity quanitity by activity is proportionate to the amount of manhours spent 
+    in each discipline, then the formula will be as follows:</p>
+
+    <form> 
+      <label for="constantC2">Constant (k):</label>
+      <input type="text" id="constantC2" name="constantC2" value="">
+      <br>
+  
+      <label for="disc-mhr-c2">Discipline Manhours:</label>
+      <input type="text" id="disc-mhr-c2" name="disc-mhr-c2" value="">
+      <br>
+  
+      <label for="commodity-value2">Commodity Value:</label>
+      <input type="text" id="commodity-value2" name="commodity-value2" value="" readonly disabled>
+      <br>
+  
+      <label for="commodity-ratio2">Commodity Ratio:</label>
+      <input type="text" id="commodity-ratio2" name="commodity-ratio2" value="" readonly disabled>
+      <br>
+  
+      <label for="baseline-disc-commodity2">Baseline Discipline Commodity:</label>
+      <input type="text" id="baseline-disc-commodity2" name="baseline-disc-commodity2" value="">
+      <br>
+  
+      <label for="baseline-disc-mhrs2">Baseline Discipline Manhours:</label>
+      <input type="text" id="baseline-disc-mhrs2" name="baseline-disc-mhrs2" value="">
+      <br>
+  
+      <label for="new-baseline-disc-commodity2">New and Baseline Discipline Commodity:</label>
+      <input type="text" id="new-baseline-disc-commodity2" name="new-baseline-disc-commodity2" value="" readonly disabled>
+      <br>
+  
+      <label for="project-disc-commodity2">Project Discipline Commodity:</label>
+      <input type="text" id="project-disc-commodity2" name="project-disc-commodity2" value="" readonly disabled>
+      <br>
+  
+      <button type="button" id="calculate-commodity2">Calculate Commodity</button>
+      <br>
+  
+   </form>
+  
+   <script src="scriptratio.js"></script>
+  
+  <div id="result-booklet2"></div>
+    </div>
+  </div>
+</div>

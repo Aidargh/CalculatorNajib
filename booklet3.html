@@ -1,0 +1,36 @@
+<!-- Booklet 3 -->
+<div id="booklet3">
+    <h2>Booklet 3</h2>
+
+    <a class="button button-primary" href="booklet1.html">Go to Booklet 1</a>
+    <a class="button button-secondary" href="booklet2.html">Go to Booklet 2</a>
+
+    <div id="norm" class="resultnorm"></div>
+    <form id="norm-form">
+
+      <h3>Step 1: Identify the project key parameters i.e. platform facilities type & estimated weight</h3>
+      <p>Estimated Facilities Weight : 1600</p>
+      <p>Facility Type : WHP Topsides</p>
+  
+    <p>The formula to calculate the norm are as follows :</p>
+    <form id="norm-form">
+      <Label for="DiscQ">Discipline Quantity</Label>
+      <input type="number" id="DiscQ"> <p>Divide</p>
+      <Label for="DiscMhrs">Discipline Manhours</Label>
+      <input type="number" id="DiscMhrs">
+  
+      <button type="submit" id="calculate-norm">Calculate Norm (Commodity/hour)</button>
+  
+      <p>if a person works for 8 hours a day, then the norm per day are as follows:</p>
+      <Label for="DiscQ8">Discipline Quantity X 8</Label>
+      <input type="number" id="DiscQ8"> <p>Divide</p>
+      <Label for="DiscMhrs8">Discipline Manhours</Label>
+      <input type="number" id="DiscMhrs8">
+  
+      <button type="submit" id="calculate-norm8">Calculate Norm (Commodity/hour)</button>
+  </form>
+  <div id="resultnorm"></div>
+
+  <script src="scriptnorm.js"></script>
+</body>
+</html>

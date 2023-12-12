@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.step {
+  margin-bottom: 20px;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#result-booklet1,
+#result-booklet2,
+#result-booklet3 {
+  margin-top: 10px;
+  font-weight: bold;
+}

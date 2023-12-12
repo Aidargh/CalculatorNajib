@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>DCF Manhours, Cost & Quantity Estimation Booklet</title>
+  </head>
+  <body>
+    <h1>Booklet 1</h1>
+
+    <a class="button button-secondary" href="booklet2.html">Go to Booklet 2</a>
+    <a class="button" href="booklet3.html">Go to Booklet 3</a>
+    
+    <div class="step">
+      <h3>Step 1: Identify the project key parameters i.e. platform facilities type & estimated weight</h3>
+      <p>Estimated Facilities Weight : 1600 </p>
+      <p>Facility Type : WHP Topsides</p>
+      <p> Construction Duration (in months) 13</p>
+    </div>
+    
+    <div id="estimatedManhours" class="resultem"></div>
+    <form id="manhours-form">
+      <h3>Step 2: Calculate the estimated manpower</h3>
+      
+      <Label for ="quantity-em">Quantity:</Label>
+        <input type="number" id="quantity-em"></p>
+      <br>
+      <label for ="manhours-em">Manhours (Mhr):</label> 
+        <input type="number" id="manhours-em"></p>
+      <p>Divide</p>
+      <label for ="quantity-em2">Quantity:</label> 
+        <input type="number" id="quantity-em2">
+
+        <button type="submit" id="calculate-manhours">Calculate Manhours</button>
+      </form>
+      <div id="resultem"></div> 
+  
+      <a class="button button-primary" href="booklet1.2.html">Next Calculate Estimated Project</a>
+    <script src="scriptem.js"></script>
+  </body>
+  </html>
