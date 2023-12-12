@@ -1,30 +1,58 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>DCF Manhours, Cost & Quantity Estimation Booklet</title>
-  </head>
-  <body>
-    <h1>Booklet 1.2</h1>
 
-    <div id="estimatedprojectcost" class="resultepc"></div>
-    <form id="cost-form"></form>
-    
-    <h3>Step 3: Calculate the Estimated Project Cost</h3>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card mt-4">
+          <h1 class="mb-4">Booklet 1.2</h1>
+          <div class="row">
+            <div class="col-md-4">
+            <a class="btn btn-primary" href="booklet1.html">Back</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container mt-5">
 
-    <label for ="quantity-epc">Quantity:</label> 
-      <input type="number" id="quantity-epc"></p>
-      <p>X</p>
-      <label for ="cost-epc">Cost (RM):</label>
-        <input type="number" id="cost-epc"></p>
-      <p>Divide</p>
-      <label for ="quantity-mt-epc">Quantity (MT):</label>
-        <input type="number" id="quantity-mt-epc"></p>
+        <div id="estimatedprojectcost" class="card resultepc mt-4"></div>
 
-        <button type="submit" id="calculate-cost">Calculate Project Cost</button>
-      </form>
-      <div id="resultepc"></div> 
-  
-      <a class="button button-primary" href="booklet1.html">Back Calculate Manhours</a>
-      <script src="scriptepc.js"></script>
-    </body>
-  </html>
+        <form id="cost-form" class="card mt-4 p-3">
+            <h3>Step 3: Calculate the Estimated Project Cost</h3>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="quantity-epc">Quantity:</label>
+                    <input type="number" class="form-control" id="quantity-epc">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="cost-epc">Cost (RM):</label>
+                    <input type="number" class="form-control" id="cost-epc">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="quantity-mt-epc">Quantity (MT):</label>
+                    <input type="number" class="form-control" id="quantity-mt-epc">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="calculate-cost">Calculate Project Cost</button>
+        </form>
+
+        <div id="resultepc" class="card mt-4 p-3">Output will display here.</div>
+
+        <script src="scriptepc.js"></script>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,39 +1,79 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>DCF Manhours, Cost & Quantity Estimation Booklet</title>
-  </head>
-  <body>
-    <h1>Booklet 1</h1>
 
-    <a class="button button-secondary" href="booklet2.html">Go to Booklet 2</a>
-    <a class="button" href="booklet3.html">Go to Booklet 3</a>
-    
-    <div class="step">
-      <h3>Step 1: Identify the project key parameters i.e. platform facilities type & estimated weight</h3>
-      <p>Estimated Facilities Weight : 1600 </p>
-      <p>Facility Type : WHP Topsides</p>
-      <p> Construction Duration (in months) 13</p>
-    </div>
-    
-    <div id="estimatedManhours" class="resultem"></div>
-    <form id="manhours-form">
-      <h3>Step 2: Calculate the estimated manpower</h3>
-      
-      <Label for ="quantity-em">Quantity:</Label>
-        <input type="number" id="quantity-em"></p>
-      <br>
-      <label for ="manhours-em">Manhours (Mhr):</label> 
-        <input type="number" id="manhours-em"></p>
-      <p>Divide</p>
-      <label for ="quantity-em2">Quantity:</label> 
-        <input type="number" id="quantity-em2">
-
-        <button type="submit" id="calculate-manhours">Calculate Manhours</button>
-      </form>
-      <div id="resultem"></div> 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
   
-      <a class="button button-primary" href="booklet1.2.html">Next Calculate Estimated Project</a>
+    <div class="container mt-5">
+      <div class="card mt-4">
+        <h1 class="mb-4">Booklet 1</h1>
+        <div class="row">
+          <div class="col-md-4">
+          <a class="btn btn-secondary" href="booklet1.html">Go to Booklet 1</a>
+          </div>
+          <div class="col-md-4">
+          <a class="btn btn-primary" href="booklet2.html">Go to Booklet 2</a>
+          </div>
+          <div class="col-md-4">
+          <a class="btn btn-primary" href="booklet3.html">Go to Booklet 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <div class="container mt-5">
+        <div class="card mt-4">
+            <div class="card-body">
+                <h3 class="card-title">Step 1: Identify the project key parameters i.e. platform facilities type & estimated weight</h3>
+                <p>Estimated Facilities Weight: 1600</p>
+                <p>Facility Type: WHP Topsides</p>
+                <p>Construction Duration (in months): 13</p>
+            </div>
+        </div>
+        
+        <div id="estimatedManhours" class="card resultem mt-4"></div>
+
+        <form id="manhours-form" class="card mt-4 p-3">
+            <h3>Step 2: Calculate the estimated manpower</h3>
+            
+            <div class="form-group">
+                <label for="quantity-em">Quantity:</label>
+                <input type="number" class="form-control" id="quantity-em">
+            </div>
+
+            <div class="form-group">
+                <label for="manhours-em">Manhours (Mhr):</label>
+                <input type="number" class="form-control" id="manhours-em">
+            </div>
+
+            <p>Divide</p>
+
+            <div class="form-group">
+                <label for="quantity-em2">Quantity:</label>
+                <input type="number" class="form-control" id="quantity-em2">
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="calculate-manhours">Calculate Manhours</button>
+        </form>
+
+        <div id="resultem" class="card mt-4 p-3">Output will display here.</div> 
+        <a class="btn btn-primary mt-4" href="booklet1.2.html">Next Calculate Estimated Project</a>
+
+
+    </div>
+  </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
     <script src="scriptem.js"></script>
-  </body>
-  </html>
+</body>
+</html>
